@@ -12,45 +12,44 @@
  * @package Project_Charles
  */
 
-get_header(); ?>
+get_header();?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-		<?php
-		if ( have_posts() ) :
+			
+	<div class="main">
+    <div class="container clearfix">
+        <div class="content">
+            <section>
+		<?php if ( have_posts() ) : ?>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			<?php /* Start the Loop */ ?>
+			
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
-			endif;
+				<?php
+					get_template_part( 'template-parts/content', get_post_format() );
+				?>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			<?php endwhile; ?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+		<?php else : ?>
 
-			endwhile;
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+		<?php endif; ?>
+		      </section>
+        </div><!------.content----------->
+		        <div class="sidebar">
+			            <aside>
+				<?php dynamic_sidebar('sidebar-1'); ?>
+            </aside>
+		            <aside>
+				<?php dynamic_sidebar('sidebar-2'); ?>
+            </aside>
+        </div>
+    </div><!------.container----------->
+	</div><!-- .main-->
+</div>	
 <?php
-get_sidebar();
 get_footer();
+
