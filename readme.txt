@@ -1,38 +1,25 @@
-=== Project Charles ===
+####################### About ####################################
+Projectcharles theme is a responsive theme developed to leaverage 
+WordPress custom post to ehance user's content management system.
+############ Highlights of features ###############################
+(1) Custom post portfolio interface
+(2) Admin panel controlled Social media share
+(3) Project charles theme options
+(4) Slider
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+################### Using the Projectcharles theme options ####################################
+(1)The first step when logged into WordPress Admin is to locate the 
+Projectcharles theme options. Once you are directed to the options page
+select the changes you need and be sure to save your changes for it to work
+(2)The style cannot load without a selection of the skin. Ensure you choose a skin and save it
 
-Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+###################### Using the Admin portfolio custom post ######################################
+(1) Create a portfolio of works or skills custom post.
+(2) Enter the link and category of your portfolio. The link can be external or your permalinks.
+(3) The portfolio will display 4 highlights of your portfolio of works in the custom home page,
+while the entire portfolio custom posts are displayed in the blog page.
+(4) The portfolio displayed in the custom homepage are the featured images, your portfolio title,
+and a read more link. For best result use short and compelling titles.
 
-A starter theme called Project Charles, or underscores.
-
-== Description ==
-
-Hi. I'm a starter theme called Project Charles, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-Project Charles includes support for Infinite Scroll in Jetpack.
-
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
-
-== Credits ==
-
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+######################### Using the Admin controlled social media share ###########################
+(1)Give your users the option to share specific posts by selecting the add social share checkbox
