@@ -14,7 +14,13 @@
 
 get_header();?>
 
-
+<div class="sliderwidget">
+        <div class="sliderwidget_image">
+            <section>
+			<?php echo wptuts_slider_template(); ?>
+			</section>
+		</div>
+</div>
 			
 	<div class="main">
     <div class="container clearfix">
